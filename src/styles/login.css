@@ -1,0 +1,62 @@
+.container-login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-login .container-style-login h1 {
+    font-size: 2.5em;
+    margin-bottom: .6em;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.container-login .container-style-login {
+    width: 100%;
+    max-width: 95vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-login .container-style-login form {
+    display: flex;
+    padding: .6em;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+.container-login .container-style-login form .container-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.container-login .container-style-login form .container-label label {
+    color: var(--tertiary-color);
+    margin-bottom: .4em;
+}
+
+.container-login .container-style-login form .container-label input {
+    background-color: var(--primary-color);
+    padding: 8px;
+    color: var(--secondary-color);
+}
+
+.container-login .container-style-login form .container-label input::placeholder {
+    background-color: var(--primary-color);
+    opacity: .6;
+}
+
+.container-login .container-style-login form .container-btn-send button {
+    background-color: var(--tertiary-color);
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
