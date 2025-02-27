@@ -16,17 +16,8 @@
 
 .container-login .container-style-login {
     width: 100%;
-    max-width: 95vw;
     display: flex;
     flex-direction: column;
-}
-
-.container-login .container-style-login form {
-    display: flex;
-    padding: .6em;
-    flex-direction: column;
-    background-color: var(--secondary-color);
-    border-radius: 8px;
 }
 
 .container-login .container-style-login form .container-label {
