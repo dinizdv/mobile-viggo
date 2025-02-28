@@ -18,6 +18,7 @@ section {
   section {
     display: block;
     height: 100vh;
+    margin-bottom: 20px;
   }
 
   .container-home {
