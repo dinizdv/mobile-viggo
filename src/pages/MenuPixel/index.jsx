@@ -33,7 +33,7 @@ const Home = () => {
 
                     <select name="tipo" id="tipo">
                         <option value="Mensal">Mensal</option>
-                        <option value="Diário">Diário</option>
+                        <option value="Semanal">Semanal</option>
                         <option value="Hoje">Hoje</option>
                     </select>
                 </div>
@@ -42,7 +42,7 @@ const Home = () => {
             <div className="container-buttons">
                 <div className="line_top">
                     <Link to="/menu_pixel/nova_venda"><FiExternalLink className='newvenda_icon'/>Nova Venda</Link>
-                    <Link to=""><HiOutlineGlobe className='adress_icon'/>Consultar Endereço</Link>
+                    <Link to="/menu_pixel/consultar_endereco"><HiOutlineGlobe className='adress_icon'/>Consultar Endereço</Link>
                 </div>
 
                 <div className="line_bottom">

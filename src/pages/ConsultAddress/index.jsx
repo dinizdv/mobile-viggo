@@ -53,7 +53,7 @@ const ConsultAddress = () => {
     <div className="header-w-register">
       <div className="header-register">
         <div className="container-back-header-register">
-          <Link to="/">
+          <Link to="/menu_pixel">
           <MdKeyboardArrowLeft className="icon-back" />
           <p>voltar</p>
           </Link>

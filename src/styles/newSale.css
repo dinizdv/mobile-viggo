@@ -1,0 +1,11 @@
+.container-form form select {
+    padding: 16px;
+margin-bottom: 12px;
+box-shadow: 0 0 2px var(--gray);
+color: var(--gray);
+border: none;
+border-radius: 8px;
+box-sizing: border-box;
+transition: all .3s;
+width: 100%;
+}

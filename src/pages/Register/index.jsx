@@ -1,8 +1,4 @@
 import '../../styles/register.css'
-<<<<<<< HEAD
-
-=======
->>>>>>> ebac0c2355f31045286ecd7cd67d759f1d58351a
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowLeft } from "react-icons/md";
