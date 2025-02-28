@@ -1,9 +1,7 @@
-const Register = () => {
-    return(
-        <div className="container-register">
-            <div className="header-register">
-                
-            </div>
-        </div>
+const Register = () => { 
+    return (
+        <div className=""></div>
     )
 }
+
+export default Register
