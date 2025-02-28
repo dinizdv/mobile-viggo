@@ -1,14 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
     --primary-color: #688BC8;
     --secondary-color: #0A2850;
     --tertiary-color: #FFFFFF;
+
+    --blue-light: #5EB3FF;
+    --black: #000000;
+    --gray: #7E7B7B;
+    --gray-dark: #6A6A6A;
+    --white: #fff;
+    --blue-dark: #4953ED;
 }
 
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box!important;
+    font-family: "Inter", 'Courier New', Courier, monospace!important;
 }
 
 h1, h2, h3, h4, h5, h6, input, button, a, ul, li, ::placeholder {
