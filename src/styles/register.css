@@ -1,8 +1,9 @@
 .header-register {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 90vw;
-    margin: 12px auto;
+    margin: 16px auto;
 }
 
 .header-w-register {
@@ -21,7 +22,7 @@
     font-size: 1.6em;
 }
 
-.container-back-header-register {
+.container-back-header-register a {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -106,7 +107,7 @@ gap: 8px;
     text-align: center;
 }
 
-#request-registration {
+.request-registration {
     background-color: var(--blue-dark);
     text-align: center;
     padding: 16px;
