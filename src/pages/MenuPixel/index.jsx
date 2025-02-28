@@ -19,7 +19,7 @@ const Home = () => {
         <section>
             <div className="container-home">
                 <div className="menu_top">
-                    <p><IoIosArrowBack className='back_icon'/>Sair</p>
+                    <Link to="/"><IoIosArrowBack className='back_icon'/>Sair</Link>
                     <h1>Bem-Vindo de Volta!</h1>
                     <img src={React}/>
                 </div>

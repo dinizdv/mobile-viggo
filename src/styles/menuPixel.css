@@ -94,6 +94,15 @@ section {
     align-items: center;
   }
 
+  .menu_top a {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #FFFFFF!important;
+    opacity: 0.9;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+
   .menu_top {
     padding-top: 30px;
     display: flex;
@@ -120,7 +129,7 @@ section {
 
   .meusGanhos h1 {
     font-size: 31px;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: 0.04em;
     margin: 10px 55px 0 0;
   }
