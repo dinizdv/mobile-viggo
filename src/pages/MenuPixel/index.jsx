@@ -1,13 +1,23 @@
 import '../../styles/menuPixel.css'
+import { FiExternalLink } from "react-icons/fi";
+import { HiOutlineGlobe } from "react-icons/hi";
+import { FaUserCircle } from "react-icons/fa";
+import { TfiStatsUp } from "react-icons/tfi";
+import { HiCurrencyDollar } from "react-icons/hi";
+import { IoIosArrowBack } from "react-icons/io";
+
+import 'bootstrap/dist/css/bootstrap.css';
+import Carousel from 'react-bootstrap/Carousel';
 
 import React from './../../assets/profile_photo.png'
+import Card_1 from './../../assets/Card_Vivo_Total_Pro.png'
 
 const Home = () => {
     return(
         <section>
             <div className="container-home">
                 <div className="menu_top">
-                    <p>Sair</p>
+                    <p><IoIosArrowBack className='back_icon'/>Sair</p>
                     <h1>Bem-Vindo de Volta!</h1>
                     <img src={React}/>
                 </div>
@@ -29,19 +39,41 @@ const Home = () => {
 
             <div className="container-buttons">
                 <div className="line_top">
-                    <button type="button">Nova Venda</button>
-                    <button type="button">Consultar Endereço</button>
+                    <button type="button"><FiExternalLink className='newvenda_icon'/>Nova Venda</button>
+                    <button type="button"><HiOutlineGlobe className='adress_icon'/>Consultar Endereço</button>
                 </div>
 
                 <div className="line_bottom">
-                    <button type="button">Consultar Documento</button>
-                    <button type="button">Minhas Vendas</button>
+                    <button type="button"><FaUserCircle className='document_icon'/>Consultar Documento</button>
+                    <button type="button"><TfiStatsUp className='venda_icon'/>Minhas Vendas</button>
                 </div>
 
                 <div className="payment">
-                    <button>Meus Pagamentos</button>
+                    <button type="button"><HiCurrencyDollar className='payment_icon'/>Meus Pagamentos</button>
                 </div>
             </div>
+
+            <div className="carousel">
+                <Carousel>
+                    <Carousel.Item>
+                        <div className="carousel_items">
+                            <img src={Card_1}/>
+                        </div>
+                    
+                    </Carousel.Item>
+                    
+                    <Carousel.Item>
+                        <div className="carousel_items">
+                            <img src={Card_1}/>
+                        </div>
+                    </Carousel.Item>
+                </Carousel>
+            </div>
+
+            <div className="indicacao">
+                <h1>Indique um Amigo e ganhe Bônus</h1>
+            </div>
+
         </section>
     )
 }

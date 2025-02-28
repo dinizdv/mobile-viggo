@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-const Register = () => { 
-    return (
-        <div className=""></div>
-=======
 import '../../styles/register.css'
 import { MdKeyboardArrowLeft } from "react-icons/md";
 
@@ -53,7 +48,6 @@ const Register = () => {
                     </form>
             </div>
         </div>
->>>>>>> f9b2616bae2350e35e926eff49eb7b4a054d2fe5
     )
 }
 
