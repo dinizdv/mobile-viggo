@@ -9,7 +9,7 @@ const RequestReceived = () => {
             <div className="container-your-request">
                 <p>Sua solicitação foi recebida, em breve você receberá um e-mail de confirmação do seu currículo</p>
                 <div className="container-btn-request-back">
-                    <Link to="/menu_pixel">Voltar ao início</Link>
+                    <Link to="/menu_pixel"><button>Voltar ao início</button></Link>
                 </div>
             </div>
         </div>

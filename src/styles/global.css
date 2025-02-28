@@ -13,6 +13,10 @@
     --blue-dark: #4953ED;
 }
 
+html {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;

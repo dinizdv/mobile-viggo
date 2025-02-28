@@ -22,22 +22,27 @@
     padding: 24px;
     box-sizing: border-box;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .container-your-request p {
-    margin: 0 0 16px 0;
+    margin: 0;
     width: 100%;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .container-btn-request-back {
     width: 100%;
-    padding: 8px;
 }
 
-.container-btn-request-back a {
+.container-btn-request-back button {
     background-color: var(--blue-dark);
     color: var(--white);
-    padding: 10px;
+    width: 100%;
+    padding: 16px 0;
     border-radius: 8px;
+    text-align: center;
 }
