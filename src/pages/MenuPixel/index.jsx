@@ -6,6 +6,8 @@ import { TfiStatsUp } from "react-icons/tfi";
 import { HiCurrencyDollar } from "react-icons/hi";
 import { IoIosArrowBack } from "react-icons/io";
 
+import { Link } from 'react-router-dom';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -39,17 +41,17 @@ const Home = () => {
 
             <div className="container-buttons">
                 <div className="line_top">
-                    <button type="button"><FiExternalLink className='newvenda_icon'/>Nova Venda</button>
-                    <button type="button"><HiOutlineGlobe className='adress_icon'/>Consultar Endereço</button>
+                    <Link to="/menu_pixel/nova_venda"><FiExternalLink className='newvenda_icon'/>Nova Venda</Link>
+                    <Link to=""><HiOutlineGlobe className='adress_icon'/>Consultar Endereço</Link>
                 </div>
 
                 <div className="line_bottom">
-                    <button type="button"><FaUserCircle className='document_icon'/>Consultar Documento</button>
-                    <button type="button"><TfiStatsUp className='venda_icon'/>Minhas Vendas</button>
+                    <Link to="/menu_pixel/consultar_documento"><FaUserCircle className='document_icon'/>Consultar Documento</Link>
+                    <Link><TfiStatsUp className='venda_icon'/>Minhas Vendas</Link>
                 </div>
 
                 <div className="payment">
-                    <button type="button"><HiCurrencyDollar className='payment_icon'/>Meus Pagamentos</button>
+                    <Link><HiCurrencyDollar className='payment_icon'/>Meus Pagamentos</Link>
                 </div>
             </div>
 

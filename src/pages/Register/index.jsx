@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 import '../../styles/register.css'
-=======
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
->>>>>>> 0971cc58b6377a5a81275d6c7644f8d4d3aa610c
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import "../../styles/register.css";
 
@@ -61,14 +59,9 @@ const Register = () => {
           <p>voltar</p>
           </Link>
         </div>
-<<<<<<< HEAD
-    )
-}
-=======
         <p>novo cadastro</p>
       </div>
     </div>
->>>>>>> 0971cc58b6377a5a81275d6c7644f8d4d3aa610c
 
       <div className="container-form">
         <form>
