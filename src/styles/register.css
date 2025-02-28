@@ -26,8 +26,13 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    text-decoration: none;
 }
-  
+
+.header-register p {
+    margin: 0;
+}
+
 .container-register form label {
     text-transform: capitalize;
     color: var(--black);

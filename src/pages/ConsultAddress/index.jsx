@@ -1,14 +1,10 @@
 import '../../styles/register.css'
-<<<<<<< HEAD
-
-=======
->>>>>>> ebac0c2355f31045286ecd7cd67d759f1d58351a
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import "../../styles/register.css";
 
-const Register = () => {
+const ConsultAddress = () => {
   const [formData, setFormData] = useState({
     nome: "",
     cpf: "",
@@ -68,73 +64,6 @@ const Register = () => {
 
       <div className="container-form">
         <form>
-          <label>dados pessoais</label>
-          <div className="one-input">
-            <input
-              type="text"
-              className="input-full"
-              required
-              placeholder="Nome Completo"
-              name="nome"
-              value={formData.nome}
-              onChange={handleInputChange}
-            />
-            <input
-              type="text"
-              className="input-full"
-              required
-              placeholder="CPF"
-              name="cpf"
-              value={formData.cpf}
-              onChange={handleInputChange}
-            />
-            <input
-              type="text"
-              className="input-full"
-              required
-              placeholder="Data de nascimento"
-              name="dataNascimento"
-              value={formData.dataNascimento}
-              onChange={handleInputChange}
-            />
-            <input
-              type="text"
-              className="input-full"
-              required
-              placeholder="Nome da Mãe"
-              name="nomeMae"
-              value={formData.nomeMae}
-              onChange={handleInputChange}
-            />
-            <input
-              type="email"
-              className="input-full"
-              required
-              placeholder="E-mail"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-            />
-            <input
-              type="text"
-              className="input-full"
-              required
-              placeholder="Telefone de Contato"
-              name="telefoneContato"
-              value={formData.telefoneContato}
-              onChange={handleInputChange}
-            />
-            <input
-              type="text"
-              className="input-full"
-              required
-              placeholder="Telefone de Recado"
-              name="telefoneRecado"
-              value={formData.telefoneRecado}
-              onChange={handleInputChange}
-            />
-          </div>
-
           <label>endereço</label>
           <div className="two-inputs">
           <input
@@ -185,24 +114,34 @@ const Register = () => {
               disabled
             />
           </div>
-
-          <label>documentos</label>
-          <button className="attach">Anexar Comprovante de Endereço</button>
-          <button className="attach">Anexar CNH ou RG</button>
+          <div className="one-input">
+            <input
+              type="text"
+              className="input-full"
+              required
+              placeholder="Complemento 1"
+              name="complemento1"
+            />
+            <input
+              type="text"
+              className="input-full"
+              required
+              placeholder="Complemento 2"
+              name="complemento2"
+            />
+          </div>
           <input
-            type="text"
-            className="input-full"
-            required
-            placeholder="Código do Comprovante"
-            name="codigoComprovante"
-            value={formData.codigoComprovante}
-            onChange={handleInputChange}
-          />
-          <button className="request-registration">Solicitar Cadastro</button>
+              type="text"
+              className="input-full"
+              required
+              placeholder="Complemento 3"
+              name="complemento3"
+            />
+          <button className="request-registration">Enviar Consulta</button>
         </form>
       </div>
     </div>
   );
 };
 
-export default Register;
+export default ConsultAddress
