@@ -27,3 +27,7 @@ body {
 h1, h2, h3, h4, h5, h6, input, button, a, ul, li, ::placeholder {
     all: unset;
 }
+
+a {
+    text-decoration: none!important;
+}

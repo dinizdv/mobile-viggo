@@ -48,7 +48,7 @@
 }
 
 #register {
-    color: var(--blue-dark);
+    color: var(--blue-dark)!important;
     font-weight: bold;
 }
 
