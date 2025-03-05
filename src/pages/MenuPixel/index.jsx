@@ -5,6 +5,12 @@ import { FaUserCircle } from "react-icons/fa";
 import { TfiStatsUp } from "react-icons/tfi";
 import { HiCurrencyDollar } from "react-icons/hi";
 import { IoIosArrowBack } from "react-icons/io";
+import { IoPersonCircleSharp } from "react-icons/io5";
+import { IoMdPerson } from "react-icons/io";
+import { IoSettingsSharp } from "react-icons/io5";
+import { IoIosHelpCircle } from "react-icons/io";
+import { MdLogout } from "react-icons/md";
+
 
 import { Link } from 'react-router-dom';
 
@@ -15,13 +21,42 @@ import React from './../../assets/profile_photo.png'
 import Card_1 from './../../assets/Card_Vivo_Total_Pro.png'
 
 const Home = () => {
+    function openSettings(){
+        alert('oi')
+    }
+
     return(
         <section>
             <div className="container-home">
                 <div className="menu_top">
                     <Link to="/"><IoIosArrowBack className='back_icon'/>Sair</Link>
                     <h1>Bem-Vindo de Volta!</h1>
-                    <img src={React}/>
+                    <img src={React} onClick={openSettings} />
+                </div>
+
+                <div className="container-modal-menu">
+                    <div className="modal-menu">
+                        <div className="info-modal">
+                        <IoPersonCircleSharp className='icon-info-modal' />
+                        <p>Trocar Foto de Perfil</p>
+                        </div>
+                        <div className="info-modal">
+                        <IoMdPerson className='icon-info-modal' />
+                        <p>Perfil</p>
+                        </div>
+                        <div className="info-modal">
+                        <IoSettingsSharp className='icon-info-modal' />
+                        <p>Configurações</p>
+                        </div>
+                        <div className="info-modal">
+                        <IoIosHelpCircle className='icon-info-modal' />
+                        <p>Ajuda</p>
+                        </div>
+                        <div className="info-modal">
+                        <MdLogout className='icon-info-modal' />
+                        <p>Sair</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="meusGanhos">
