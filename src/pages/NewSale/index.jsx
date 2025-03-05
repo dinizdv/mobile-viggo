@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowLeft } from "react-icons/md";
+import '../../styles/newSale.css'
 
 const NewSale = () => {
       const [formData, setFormData] = useState({
@@ -181,54 +182,55 @@ const NewSale = () => {
               </div>
 
             <label htmlFor="">Produtos Fixos</label>
-            <div className="one-input">
-                <input
-                  type="text"
-                  className="input-full"
-                  required
-                  placeholder="Linha Fixa"
-                  name="linhaFixa"
-                />
-                                <input
-                  type="text"
-                  className="input-full"
-                  required
-                  placeholder="Banda Larga"
-                  name="bandaLarga"
-                />
-                                <input
-                  type="text"
-                  className="input-full"
-                  required
-                  placeholder="TV"
-                  name="tv"
-                />
-                                <input
-                  type="text"
-                  className="input-full"
-                  required
-                  placeholder="Serviços Adicionais"
-                  name="servicosAdicionais"
-                />
-              </div>
+            <select name="" id="">
+              <option value="" selected disabled>Linha Fixa</option>
+              <option value="">test</option>
+              <option value="">test</option>
+              <option value="">test</option>
+              <option value="">test</option>
+            </select>
+
+
+            <select name="" id="">
+              <option value="" selected disabled>Banda Larga</option>
+              <option value="">test</option>
+              <option value="">test</option>
+              <option value="">test</option>
+              <option value="">test</option>
+            </select>
+
+            <select name="" id="">
+              <option value="" selected disabled>TV</option>
+              <option value="">test</option>
+              <option value="">test</option>
+              <option value="">test</option>
+              <option value="">test</option>
+            </select>
+
+            <select name="" id="">
+              <option value="" selected disabled>Serviços Adicionais</option>
+              <option value="">test</option>
+              <option value="">test</option>
+              <option value="">test</option>
+              <option value="">test</option>
+            </select>
 
             <label htmlFor="">Produtos Móveis</label>
-            <div className="one-input">
-                <input
-                  type="text"
-                  className="input-full"
-                  required
-                  placeholder="Plano Móvel"
-                  name="planoMovel"
-                />
-                                <input
-                  type="text"
-                  className="input-full"
-                  required
-                  placeholder="Serviços Adicionais"
-                  name="servicosAdicionais"
-                />
-</div>
+            <select name="" id="">
+              <option value="" selected disabled>Produto Móvel</option>
+              <option value="">test</option>
+              <option value="">test</option>
+              <option value="">test</option>
+              <option value="">test</option>
+            </select>
+
+            <select name="" id="">
+              <option value="" selected disabled>Serviços Adicionais</option>
+              <option value="">test</option>
+              <option value="">test</option>
+              <option value="">test</option>
+              <option value="">test</option>
+            </select>
 
               <label>documentos</label>
               <button className="attach">Enviar Anexo</button>

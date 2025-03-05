@@ -18,6 +18,7 @@ section {
   section {
     display: block;
     height: 102vh;
+    margin-bottom: 20px;
   }
 
   .container-home {
@@ -212,7 +213,7 @@ section {
     align-items: center;
     text-align: center;
     border-radius: 10px;
-    margin: 15px auto 0 auto;
+    margin: 15px auto 20px auto;
     background-image: url('../assets/Rectangle.png');
     width: 332px;
     height: 130px;

@@ -42,14 +42,14 @@ const Login = () => {
                 type="text"
                 className="input-full first-input-welcome"
                 required
-                placeholder="Nome Completo"
+                placeholder="Digite seu CPF"
                 name="nome"
               />
               <input
                 type="text"
                 className="input-full last-input-welcome"
                 required
-                placeholder="Nome Completo"
+                placeholder="Digite sua Senha"
                 name="nome"
               />
             </div>

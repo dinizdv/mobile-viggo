@@ -1,5 +1,4 @@
 import '../../styles/register.css'
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowLeft } from "react-icons/md";
