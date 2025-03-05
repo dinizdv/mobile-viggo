@@ -61,7 +61,6 @@ const Home = () => {
                         <div className="carousel_items">
                             <img src={Card_1}/>
                         </div>
-                    
                     </Carousel.Item>
                     
                     <Carousel.Item>
