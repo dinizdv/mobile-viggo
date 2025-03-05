@@ -17,7 +17,7 @@ section {
 @media (max-width: 600px) {
   section {
     display: block;
-    height: 100vh;
+    height: 102vh;
   }
 
   .container-home {
@@ -141,13 +141,13 @@ section {
   }
 
   #tipo {
-    font-size: 13px;
+    font-size: 14px;
     border: none;
     color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.18);
     font-weight: 300;
     letter-spacing: 0.02em;
-    padding: 10px;
+    padding: 11px;
     border-radius: 2.5px;
   }
 

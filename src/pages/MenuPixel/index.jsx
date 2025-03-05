@@ -33,7 +33,7 @@ const Home = () => {
 
                     <select name="tipo" id="tipo">
                         <option value="Mensal">Mensal</option>
-                        <option value="Diário">Diário</option>
+                        <option value="Semanal">Semanal</option>
                         <option value="Hoje">Hoje</option>
                     </select>
                 </div>
@@ -61,7 +61,6 @@ const Home = () => {
                         <div className="carousel_items">
                             <img src={Card_1}/>
                         </div>
-                    
                     </Carousel.Item>
                     
                     <Carousel.Item>
