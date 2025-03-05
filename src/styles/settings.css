@@ -1,0 +1,74 @@
+.container-settings {
+    width: 100%;
+    height: 100vh;
+}
+
+.container-profile-photo {
+    display: flex;
+    background-color: var(--blue-light);
+    padding: 24px 0;
+    flex-direction: column;
+}
+
+.settings-back {
+    display: flex;
+    align-items: center;
+    margin: 0 0 16px 8px;
+    color: var(--white);
+}
+
+.settings-back .icon-back {
+    font-size: 1.6em;
+}
+
+.settings-back p {
+    margin: 0;
+}
+
+.container-profile-photo .change-photo {
+    margin: 12px auto 0 auto;
+}
+
+.photo-profile {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    border: 6px solid var(--white);
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.photo-profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: .4s;
+    transform: scale(1);
+    color: var(--black);
+}
+
+.photo-profile img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.container-infos-settings {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.setting {
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 24px 16px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.setting p {
+    margin: 0;
+    color: var(--black);
+}

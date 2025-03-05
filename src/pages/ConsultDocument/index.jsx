@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 
 const ConsultDocument = () => {
+  const [selectedFiles, setSelectedFiles] = useState(null);
+  const fileInputRef = useRef(null);
+
       const [formData, setFormData] = useState({
         nome: "",
         cpf: "",
@@ -45,6 +48,18 @@ const ConsultDocument = () => {
           console.error("Erro ao buscar CEP:", error);
         }
       };
+
+      const sendDocs = async (e) => {
+        if (!selectedFiles || !selectedFiles.length) {
+          alert('Por favor, selecione um arquivo');
+          return;
+        }
+      
+        const formData = new FormData();
+        Array.from(selectedFiles).forEach(file => {
+          formData.append('documents', file);
+        });
+      }
     
       return (
         <div className="container-register">
@@ -151,7 +166,7 @@ const ConsultDocument = () => {
               <div className="one-input">
                 <input
                   type="text"
-                  className="input-full"
+                  className="input-full disabled-input"
                   required
                   placeholder="Logradouro"
                   name="logradouro"
@@ -164,7 +179,7 @@ const ConsultDocument = () => {
               <div className="two-inputs">
                 <input
                   type="text"
-                  className="input-75"
+                  className="input-75 disabled-input"
                   placeholder="Cidade"
                   name="cidade"
                   value={formData.cidade}
@@ -172,7 +187,7 @@ const ConsultDocument = () => {
                 />
                 <input
                   type="text"
-                  className="input-25"
+                  className="input-25 disabled-input"
                   placeholder="UF"
                   name="uf"
                   value={formData.uf}
@@ -233,7 +248,20 @@ const ConsultDocument = () => {
             </select>
 
               <label>documentos</label>
-              <button className="attach">Enviar Anexo</button>
+              <button 
+    className="attach" 
+    onClick={() => fileInputRef.current.click()}
+  >
+    Enviar Anexo
+  </button>
+  <input
+  type="file"
+  ref={fileInputRef}
+  style={{ display: 'none' }}
+  onChange={(e) => setSelectedFiles(e.target.files)}
+  multiple={true}
+  accept=".pdf,.jpg,.png,.jpeg" 
+/>
               <button className="request-registration">Consultar Documento</button>
             </form>
           </div>

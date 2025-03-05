@@ -4,6 +4,7 @@ import MenuPixel from "../pages/MenuPixel"
 import ConsultDocument from "../pages/ConsultDocument"
 import ConsultAddress from "../pages/ConsultAddress"
 import NewSale from "../pages/NewSale"
+import Settings from "../pages/Settings"
 import Register from '../pages/Register'
 import RequestReceived from '../pages/RequestReceived'
 import Error from "../pages/Error"
@@ -16,6 +17,7 @@ const RoutesApp = () => {
             <Route path='/menu_pixel/consultar_documento' element={<ConsultDocument />} />
             <Route path='/menu_pixel/consultar_endereco' element={<ConsultAddress />} />
             <Route path='/menu_pixel/nova_venda' element={<NewSale />} />
+            <Route path='/menu_pixel/configuracoes' element={<Settings />} />
             <Route path='/cadastro' element={<Register />} />
             <Route path='/cadastro/solicitacao_recebida' element={<RequestReceived />} />
             <Route path='*' element={<Error />} />

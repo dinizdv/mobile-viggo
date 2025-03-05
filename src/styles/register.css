@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     width: 90vw;
     margin: 16px auto;
 }
 
 .header-w-register {
-    width: 100vw;
     display: flex;
     justify-content: space-between;
     background-color: var(--blue-light);
@@ -119,4 +119,9 @@ gap: 8px;
     margin-bottom: 16px;
     color: var(--white);
     border-radius: 8px;
+}
+
+.disabled-input {
+    opacity: .7;
+    cursor: not-allowed;
 }

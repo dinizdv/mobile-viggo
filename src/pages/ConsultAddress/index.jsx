@@ -86,7 +86,7 @@ const ConsultAddress = () => {
           <div className="one-input">
             <input
               type="text"
-              className="input-full"
+              className="input-full disabled-input"
               required
               placeholder="Logradouro"
               name="logradouro"
@@ -99,7 +99,7 @@ const ConsultAddress = () => {
           <div className="two-inputs">
             <input
               type="text"
-              className="input-75"
+              className="input-75 disabled-input"
               placeholder="Cidade"
               name="cidade"
               value={formData.cidade}
@@ -107,7 +107,7 @@ const ConsultAddress = () => {
             />
             <input
               type="text"
-              className="input-25"
+              className="input-25 disabled-input"
               placeholder="UF"
               name="uf"
               value={formData.uf}
