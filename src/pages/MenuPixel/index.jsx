@@ -5,10 +5,12 @@ import { FaUserCircle } from "react-icons/fa";
 import { TfiStatsUp } from "react-icons/tfi";
 import { HiCurrencyDollar } from "react-icons/hi";
 import { IoIosArrowBack } from "react-icons/io";
+import { FaUser } from "react-icons/fa6";
+import { IoMdSettings } from "react-icons/io";
+import { IoIosHelpCircle } from "react-icons/io";
 
 import { Link } from 'react-router-dom';
 
-import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 
 import React from './../../assets/profile_photo.png'
@@ -17,11 +19,25 @@ import Card_1 from './../../assets/Card_Vivo_Total_Pro.png'
 const Home = () => {
     return(
         <section>
+            <div className="menu_callapse">
+                <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+                        <div class="bg_menu">
+                            <Link to="/menu_pixel/nova_venda"><FaUser className='user_icon'/>Perfil</Link>
+                            <Link to="/menu_pixel/consultar_endereco"><IoMdSettings className='settings_icon'/>Configurações</Link>
+                            <Link to="/menu_pixel/consultar_endereco"><IoIosHelpCircle className='help_icon'/>Ajuda</Link>
+
+                            <p>Vinicius</p>
+                        </div>
+                </div>
+            </div>
+
             <div className="container-home">
                 <div className="menu_top">
                     <Link to="/"><IoIosArrowBack className='back_icon'/>Sair</Link>
                     <h1>Bem-Vindo de Volta!</h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <img src={React}/>
+                    </button>
                 </div>
 
                 <div className="meusGanhos">

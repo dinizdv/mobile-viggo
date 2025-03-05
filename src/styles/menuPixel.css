@@ -10,14 +10,54 @@ body {
     background-color: #F2F2F2!important;
 }
 
-section {
-  display: none;
-}
-
 @media (max-width: 600px) {
   section {
     display: block;
     padding-bottom: 20px;
+  }
+
+    .collapse {
+      border-bottom: 1px solid #ffffff30;
+    }
+
+  .bg_menu {
+    background-color: #5EB3FF;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 30px!important;
+    border-bottom: 1px solid #ffffff30;
+  }
+
+  .bg_menu a {
+    color: #FFFFFF;
+    opacity: 0.9;
+    font-weight: 300;
+    font-size: 14.5px;
+    margin-bottom: 10px;
+  }
+
+  .user_icon {
+    margin-right: 10px;
+  }
+
+  .settings_icon {
+    font-size: 18px;
+    margin-right: 7px;
+  }
+
+  .help_icon {
+    font-size: 18px;
+    margin-right: 7px;
+  }
+
+  .bg_menu p {
+    margin: 20px 0 0 0;
+    color: #FFFFFF;
+    opacity: 0.9;
+    font-weight: 300;
+    font-size: 14.5px;
+    letter-spacing: 0.20em;
   }
 
   .container-home {
