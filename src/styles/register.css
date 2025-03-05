@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     width: 90vw;
     margin: 16px auto;
 }
 
 .header-w-register {
-    width: 100vw;
     display: flex;
     justify-content: space-between;
     background-color: var(--blue-light);

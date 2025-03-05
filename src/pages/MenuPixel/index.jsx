@@ -10,9 +10,10 @@ import { IoMdPerson } from "react-icons/io";
 import { IoSettingsSharp } from "react-icons/io5";
 import { IoIosHelpCircle } from "react-icons/io";
 import { MdLogout } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
 
 
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
@@ -21,8 +22,9 @@ import React from './../../assets/profile_photo.png'
 import Card_1 from './../../assets/Card_Vivo_Total_Pro.png'
 
 const Home = () => {
+    const navigate = useNavigate()
     function openSettings(){
-        alert('oi')
+        navigate('/menu_pixel/configuracoes')
     }
 
     return(
@@ -34,7 +36,7 @@ const Home = () => {
                     <img src={React} onClick={openSettings} />
                 </div>
 
-                <div className="container-modal-menu">
+                {/* <div className="container-modal-menu">
                     <div className="modal-menu">
                         <div className="info-modal">
                         <IoPersonCircleSharp className='icon-info-modal' />
@@ -57,7 +59,7 @@ const Home = () => {
                         <p>Sair</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="meusGanhos">
                     <div className="positionGanhos">

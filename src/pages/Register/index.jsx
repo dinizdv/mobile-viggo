@@ -194,7 +194,7 @@ const Register = () => {
             value={formData.codigoComprovante}
             onChange={handleInputChange}
           />
-          <button className="request-registration">Solicitar Cadastro</button>
+          <Link to="/cadastro/solicitacao_recebida" className="request-registration">Solicitar Cadastro</Link>
         </form>
       </div>
     </div>

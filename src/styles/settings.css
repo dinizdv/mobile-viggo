@@ -5,15 +5,23 @@
 
 .container-profile-photo {
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--blue-light);
     padding: 24px 0;
     flex-direction: column;
 }
 
-.container-profile-photo p {
+.settings-back {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.settings-back p {
     margin: 0;
+}
+
+.container-profile-photo .change-photo {
+    margin: 0 auto;
 }
 
 .photo-profile {
@@ -23,6 +31,7 @@
     margin-bottom: 12px;
     border: 6px solid var(--white);
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .photo-profile img {

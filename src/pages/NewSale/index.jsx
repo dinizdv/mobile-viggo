@@ -2,8 +2,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import '../../styles/newSale.css'
+import { useRef } from "react";
 
 const NewSale = () => {
+  const [selectedFiles, setSelectedFiles] = useState(null);
+  const fileInputRef = useRef(null);
+
       const [formData, setFormData] = useState({
         nome: "",
         cpf: "",
@@ -45,6 +49,32 @@ const NewSale = () => {
         } catch (error) {
           console.error("Erro ao buscar CEP:", error);
         }
+      };
+
+      const sendDocs = async () => {
+        if (!selectedFiles || !selectedFiles.length) {
+          alert('Por favor, selecione um arquivo');
+          return;
+        }
+      
+        const formData = new FormData();
+        Array.from(selectedFiles).forEach(file => {
+          formData.append('documents', file);
+        });
+      
+        // try {
+        //   const response = await fetch('/api/upload-documents', {
+        //     method: 'POST',
+        //     body: formData,
+        //   });
+          
+        //   if (!response.ok) throw new Error('Erro ao enviar documentos');
+          
+        //   alert('Documentos enviados com sucesso!');
+        // } catch (error) {
+        //   console.error('Erro ao enviar arquivos:', error);
+        //   alert('Ocorreu um erro ao enviar os documentos');
+        // }
       };
     
       return (
@@ -233,7 +263,20 @@ const NewSale = () => {
             </select>
 
               <label>documentos</label>
-              <button className="attach">Enviar Anexo</button>
+  <button 
+    className="attach" 
+    onClick={() => fileInputRef.current.click()}
+  >
+    Enviar Anexo
+  </button>
+  <input
+  type="file"
+  ref={fileInputRef}
+  style={{ display: 'none' }}
+  onChange={(e) => setSelectedFiles(e.target.files)}
+  multiple={true}
+  accept=".pdf,.jpg,.png,.jpeg" 
+/>
               <button className="request-registration">Consultar Documento</button>
             </form>
           </div>
