@@ -22,9 +22,9 @@ const Home = () => {
             <div className="menu_callapse">
                 <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
                         <div class="bg_menu">
-                            <Link to="/menu_pixel/nova_venda"><FaUser className='user_icon'/>Perfil</Link>
-                            <Link to="/menu_pixel/consultar_endereco"><IoMdSettings className='settings_icon'/>Configurações</Link>
-                            <Link to="/menu_pixel/consultar_endereco"><IoIosHelpCircle className='help_icon'/>Ajuda</Link>
+                            <Link to=""><FaUser className='user_icon'/>Perfil</Link>
+                            <Link to=""><IoMdSettings className='settings_icon'/>Configurações</Link>
+                            <Link to=""><IoIosHelpCircle className='help_icon'/>Ajuda</Link>
 
                             <p>Vinicius</p>
                         </div>
