@@ -120,3 +120,8 @@ gap: 8px;
     color: var(--white);
     border-radius: 8px;
 }
+
+.disabled-input {
+    opacity: .7;
+    cursor: not-allowed;
+}

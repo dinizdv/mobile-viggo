@@ -1,10 +1,13 @@
 import '../../styles/register.css'
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import "../../styles/register.css";
 
 const Register = () => {
+  const [selectedFiles, setSelectedFiles] = useState(null);
+  const fileInputRef = useRef(null);
+
   const [formData, setFormData] = useState({
     nome: "",
     cpf: "",
@@ -47,6 +50,18 @@ const Register = () => {
       console.error("Erro ao buscar CEP:", error);
     }
   };
+
+  const sendDocs = async () => {
+    if (!selectedFiles || !selectedFiles.length) {
+      alert('Por favor, selecione um arquivo');
+      return;
+    }
+  
+    const formData = new FormData();
+    Array.from(selectedFiles).forEach(file => {
+      formData.append('documents', file);
+    });
+  }
 
   return (
     <div className="container-register">
@@ -153,7 +168,7 @@ const Register = () => {
           <div className="one-input">
             <input
               type="text"
-              className="input-full"
+              className="input-full disabled-input"
               required
               placeholder="Logradouro"
               name="logradouro"
@@ -166,7 +181,7 @@ const Register = () => {
           <div className="two-inputs">
             <input
               type="text"
-              className="input-75"
+              className="input-75 disabled-input"
               placeholder="Cidade"
               name="cidade"
               value={formData.cidade}
@@ -174,7 +189,7 @@ const Register = () => {
             />
             <input
               type="text"
-              className="input-25"
+              className="input-25 disabled-input"
               placeholder="UF"
               name="uf"
               value={formData.uf}
@@ -183,9 +198,35 @@ const Register = () => {
           </div>
 
           <label>documentos</label>
-          <button className="attach">Anexar Comprovante de Endereço</button>
-          <button className="attach">Anexar CNH ou RG</button>
-          <input
+          <button 
+    className="attach" 
+    onClick={() => fileInputRef.current.click()}
+  >
+    Anexar comprovante de endereço
+  </button>
+  <input
+  type="file"
+  ref={fileInputRef}
+  style={{ display: 'none' }}
+  onChange={(e) => setSelectedFiles(e.target.files)}
+  multiple={true}
+  accept=".pdf,.jpg,.png,.jpeg" 
+/>
+
+<button 
+    className="attach" 
+    onClick={() => fileInputRef.current.click()}
+  >
+    Anexar CNH ou RG
+  </button>
+  <input
+  type="file"
+  ref={fileInputRef}
+  style={{ display: 'none' }}
+  onChange={(e) => setSelectedFiles(e.target.files)}
+  multiple={true}
+  accept=".pdf,.jpg,.png,.jpeg" 
+/>          <input
             type="text"
             className="input-full"
             required

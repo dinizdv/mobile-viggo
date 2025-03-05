@@ -13,7 +13,12 @@
 .settings-back {
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
+    margin: 0 0 16px 8px;
+    color: var(--white);
+}
+
+.settings-back .icon-back {
+    font-size: 1.6em;
 }
 
 .settings-back p {
@@ -21,7 +26,7 @@
 }
 
 .container-profile-photo .change-photo {
-    margin: 0 auto;
+    margin: 12px auto 0 auto;
 }
 
 .photo-profile {
