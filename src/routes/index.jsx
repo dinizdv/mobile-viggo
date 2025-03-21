@@ -7,7 +7,9 @@ import NewSale from "../pages/NewSale"
 import Settings from "../pages/Settings"
 import Register from '../pages/Register'
 import RequestReceived from '../pages/RequestReceived'
+import MinhasVendas from '../pages/MySales'
 import Error from "../pages/Error"
+import MySales from "../pages/MySales"
 
 const RoutesApp = () => {
     return(
@@ -18,6 +20,7 @@ const RoutesApp = () => {
             <Route path='/menu_pixel/consultar_endereco' element={<ConsultAddress />} />
             <Route path='/menu_pixel/nova_venda' element={<NewSale />} />
             <Route path='/menu_pixel/configuracoes' element={<Settings />} />
+            <Route path='/menu_pixel/minhas_vendas' element={<MySales />} />
             <Route path='/cadastro' element={<Register />} />
             <Route path='/cadastro/solicitacao_recebida' element={<RequestReceived />} />
             <Route path='*' element={<Error />} />

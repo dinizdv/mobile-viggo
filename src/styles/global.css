@@ -24,7 +24,7 @@ body {
     font-family: "Inter", 'Courier New', Courier, monospace!important;
 }
 
-h1, h2, h3, h4, h5, h6, input, button, a, ul, li, ::placeholder {
+h1, h2, h3, h4, h5, h6, button, a, ul, li, ::placeholder {
     all: unset;
 }
 

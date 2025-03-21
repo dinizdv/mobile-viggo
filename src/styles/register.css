@@ -63,7 +63,6 @@ flex-direction: column;
 
 .container-form form input {
 padding: 16px;
-margin-bottom: 12px;
 box-shadow: 0 0 2px var(--gray);
 color: var(--gray);
 border-radius: 8px;

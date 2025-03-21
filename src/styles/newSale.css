@@ -9,3 +9,186 @@ box-sizing: border-box;
 transition: all .3s;
 width: 100%;
 }
+
+/* .container-form form select {
+    padding: 16px;
+margin-bottom: 12px;
+box-shadow: 0 0 2px var(--gray);
+color: var(--gray);
+border: none;
+border-radius: 8px;
+box-sizing: border-box;
+transition: all .3s;
+width: 100%;
+}
+ */
+ .container-new-sale {
+    /* padding: 24px 3.5vw 0 3.5vw; */
+    background-color: #F1F1F1;
+    /* margin-top: 75px; */
+    display: flex;
+    justify-content: center;
+}
+
+.container-new-sale input {
+    outline: none;
+    border: none;
+}
+
+.container-back-header-register a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.header-register p {
+    margin: 0;
+}
+
+.container-register {
+    height: 100vh;
+    width: 100%;
+}
+
+.container-cpf-cnpj {
+    display: flex;
+}
+
+.container-cpf-cnpj input {
+    margin: 0;
+    border: none!important;
+    box-shadow: none!important;
+}
+
+.container-cpf-cnpj label {
+    margin: 0!important;
+}
+
+.container-register form label {
+    text-transform: capitalize;
+    color: #000;
+}
+
+.container-register .container-form {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}  
+
+.container-register .container-form form {
+    width: 100%;
+    max-width: 95vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;  
+}
+
+.container-form form label {
+    margin-top: 10px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+.one-input {
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+form input {
+padding: 13px;
+margin-bottom: 12px;
+box-shadow: 0 0 2px gray;
+color: gray;
+border-radius: 8px;
+box-sizing: border-box;
+transition: all .3s;
+}
+
+form input:focus {
+    box-shadow: 0 0 3px #133F79;
+    padding: 13px 24px;
+    color: #133F79;
+}
+
+
+.input-full {
+width: 100%;
+display: inline-block;
+}
+
+.input-50 {
+width: 50%;
+display: inline-block;
+}
+
+.input-75 {
+width: 75%;
+display: inline-block;
+}
+
+.input-25 {
+width: 25%;
+display: inline-block;
+}
+
+.two-inputs {
+display: flex;
+gap: 8px;
+}
+
+.attach {
+    background-color: gray;
+    padding: 10px;
+    margin-bottom: 12px;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.disabled-input {
+    opacity: .7;
+    cursor: not-allowed;
+}
+
+.container-form form select {
+    padding: 13px;
+    margin-bottom: 12px;
+    box-shadow: 0 0 2px gray;
+    color: gray;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all .3s;
+    width: 100%;
+    outline: none;
+    background: white;
+}
+
+.send-docs {
+    display: flex;
+    flex-direction: column;
+}
+
+.send-pedido {
+    background-color: #0B2A54;
+    padding: 10px;
+    margin-bottom: 12px;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container-new-sale form label {
+    display: flex;
+    margin: 16px 0 8px 0!important;
+}
+
