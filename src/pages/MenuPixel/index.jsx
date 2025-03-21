@@ -97,7 +97,7 @@ const Home = () => {
 
                 <div className="line_bottom">
                     <Link to="/menu_pixel/consultar_documento"><FaUserCircle className='document_icon'/>Consultar Documento</Link>
-                    <Link><TfiStatsUp className='venda_icon'/>Minhas Vendas</Link>
+                    <Link to="/menu_pixel/minhas_vendas"><TfiStatsUp className='venda_icon'/>Minhas Vendas</Link>
                 </div>
 
                 <div className="payment">

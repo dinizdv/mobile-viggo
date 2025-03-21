@@ -195,7 +195,7 @@ const handleInputChange = (e) => {
       cpf_cnpj: tipoCliente === "cpf" ? "CPF" : "CNPJ",
       nome: tipoCliente === "cpf" ? "Nome Completo" : "Razão social",
       data_nascimento: tipoCliente === "cpf" ? "Data de Nascimento" : "Data de abertura",
-      mae: tipoCliente === "cpf" ? "Nome da Mãe" : "Nome de representante",
+      mae: tipoCliente === "cpf" ? "Nome da Mãe" : "Nome do representante",
       email: "E-mail",
       telefone: "Telefone de Contato",
       outro_contato: "Telefone de Recado",
