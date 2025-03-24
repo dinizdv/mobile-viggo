@@ -28,6 +28,11 @@ h1, h2, h3, h4, h5, h6, button, a, ul, li, ::placeholder {
     all: unset;
 }
 
+input {
+    outline: none;
+    border: none;
+}
+
 a {
     text-decoration: none!important;
 }
