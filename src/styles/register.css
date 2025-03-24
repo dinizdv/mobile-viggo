@@ -124,3 +124,92 @@ gap: 8px;
     opacity: .7;
     cursor: not-allowed;
 }
+
+/*Minhas vendas*/
+
+.container-vendas {
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.cliente {
+    display: flex;
+    align-items: center;
+    background-color: #EEEEEE;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.icon-client {
+    font-size: 19px;
+    margin-right: 10px;
+}
+
+.cliente span {
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.EtapaStatus {
+    margin-top: 20px;
+    display: flex;
+}
+
+.EtapaStatus span {
+    font-size: 13px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.etpst:last-child {
+    margin-left: 10px;
+}
+
+.Endereco {
+    display: flex;
+    flex-direction: column;
+    background-color: #DDDEF0;
+    margin: 10px 0 0 0;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-weight: 400!important;
+}
+
+.Liberado {
+    display: flex;
+    flex-direction: column;
+    background-color: #FDEBCF;
+    margin: 10px 0 0 0;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-weight: 400!important;
+}
+
+.dados_vendas {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 1px 0 0 5px;
+}
+
+.acao_necessaria {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.icon-acao {
+    font-size: 30px;
+    color: #FF8C00;
+    margin-right: 10px;
+}
+
+.acao_necessaria span {
+    font-weight: 500;
+    font-size: 13.5px;
+}

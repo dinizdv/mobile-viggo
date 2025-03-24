@@ -7,9 +7,8 @@ import NewSale from "../pages/NewSale"
 import Settings from "../pages/Settings"
 import Register from '../pages/Register'
 import RequestReceived from '../pages/RequestReceived'
-import MinhasVendas from '../pages/MySales'
+import MySales from '../pages/MySales'
 import Error from "../pages/Error"
-import MySales from "../pages/MySales"
 
 const RoutesApp = () => {
     return(

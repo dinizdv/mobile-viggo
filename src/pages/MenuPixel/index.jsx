@@ -7,13 +7,10 @@ import { HiCurrencyDollar } from "react-icons/hi";
 import { IoIosArrowBack } from "react-icons/io";
 import { FaUser } from "react-icons/fa6";
 import { IoMdSettings } from "react-icons/io";
-import { IoSettingsSharp } from "react-icons/io5";
-import { MdLogout } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
 import { IoIosHelpCircle } from "react-icons/io";
 
-
-import { Link, Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -97,7 +94,7 @@ const Home = () => {
 
                 <div className="line_bottom">
                     <Link to="/menu_pixel/consultar_documento"><FaUserCircle className='document_icon'/>Consultar Documento</Link>
-                    <Link><TfiStatsUp className='venda_icon'/>Minhas Vendas</Link>
+                    <Link to="/menu_pixel/minhas_vendas"><TfiStatsUp className='venda_icon'/>Minhas Vendas</Link>
                 </div>
 
                 <div className="payment">
